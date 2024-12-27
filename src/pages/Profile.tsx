@@ -1,5 +1,6 @@
 import React from "react";
 import SecondaryNav from "../components/SecondaryNav";
+import Footer from "../components/Footer";
 import "../style/global.css";
 import { Form, Container, InputGroup } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -77,6 +78,7 @@ const Profile: React.FC = () => {
           </button>
         </Link>
       </section>
+      <Footer />
     </>
   );
 };

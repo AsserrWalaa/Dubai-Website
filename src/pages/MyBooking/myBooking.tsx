@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import "../../style/global.css";
 import { Tab, Tabs } from "react-bootstrap"; // Import necessary components
 import "@fortawesome/fontawesome-free/css/all.min.css";
@@ -55,6 +56,7 @@ const MyBooking: React.FC = () => {
           </Tabs>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

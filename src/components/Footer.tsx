@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import footerLogo from "../assets/1-removebg-preview (3) 1.png";
+import footerLogo from "../assets/1-removebg-preview (3) 1.jpg";
 import wp from "../assets/wp.png";
 import fb from "../assets/fb.png";
 import ig from "../assets/ig.png";

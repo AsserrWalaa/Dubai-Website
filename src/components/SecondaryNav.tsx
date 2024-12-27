@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import logo from "../assets/1-removebg-preview (3) 1.png";
+import logo from "../assets/1-removebg-preview (3) 1.jpg";
 import profile from "../assets/p2.png";
 
 import { NavDropdown } from "react-bootstrap";
@@ -14,7 +14,13 @@ const AppNavbar: React.FC = () => {
       <Container className="d-flex align-items-center justify-content-between">
         {/* Logo aligned to the left */}
         <Navbar.Brand as={Link} to="/">
-          <img src={logo} alt="Logo" width="115" height="100" />
+          <img
+            src={logo}
+            alt="Logo"
+            width="90"
+            height="90"
+            className="rounded-5"
+          />
         </Navbar.Brand>
 
         {/* Navbar Toggle Button for Small Screens */}
