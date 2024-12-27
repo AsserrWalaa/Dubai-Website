@@ -1,0 +1,144 @@
+/* Start Home */
+
+/* start our service section */
+.home-claening {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1),
+      rgba(247, 113, 46, 0.16),
+      rgba(247, 113, 46, 0.37),
+      rgba(247, 113, 46, 0.37)
+    ),
+    url(../assets/homeClaning.jpeg);
+}
+.kitchen-claening {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1),
+      rgba(247, 113, 46, 0.16),
+      rgba(247, 113, 46, 0.37),
+      rgba(247, 113, 46, 0.37)
+    ),
+    url(../assets/kitchen.jpeg);
+}
+.surface-claening {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1),
+      rgba(247, 113, 46, 0.16),
+      rgba(247, 113, 46, 0.37),
+      rgba(247, 113, 46, 0.37)
+    ),
+    url(../assets/surface.jpeg);
+}
+.bathroom-claening {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1),
+      rgba(247, 113, 46, 0.16),
+      rgba(247, 113, 46, 0.37),
+      rgba(247, 113, 46, 0.37)
+    ),
+    url(../assets/bathroom.png);
+}
+.Upholstery {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1),
+      rgba(247, 113, 46, 0.16),
+      rgba(247, 113, 46, 0.37),
+      rgba(247, 113, 46, 0.37)
+    ),
+    url(../assets/Upholstery.jpeg);
+}
+.roomLayout {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1),
+      rgba(247, 113, 46, 0.16),
+      rgba(247, 113, 46, 0.37),
+      rgba(247, 113, 46, 0.37)
+    ),
+    url(../assets/roomLayout.jpeg);
+}
+.perfuming {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1),
+      rgba(247, 113, 46, 0.16),
+      rgba(247, 113, 46, 0.37),
+      rgba(247, 113, 46, 0.37)
+    ),
+    url(../assets/perfuming.jpeg);
+}
+.window-claening {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1),
+      rgba(255, 255, 255, 0.1),
+      rgba(247, 113, 46, 0.16),
+      rgba(247, 113, 46, 0.37),
+      rgba(247, 113, 46, 0.37)
+    ),
+    url(../assets/window.jpeg);
+}
+.ourServices {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 352px;
+  width: 270px !important;
+}
+/* end our service section */
+
+/* offers */
+
+.swiperHome .swiper-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.offer-text,
+.service-text {
+  color: #006f73 !important;
+}
+.swiperClient .swiper-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.fa-star {
+  transition: color 0.2s ease-in-out;
+}
+.book-white {
+  border-radius: 6px;
+  border-color: rgba(0, 111, 115, 1);
+  background: white;
+  width: 203px;
+}
+.client {
+  min-width: 250px;
+  background: #fcfcfc;
+}
+.fixed-buttons {
+  position: fixed;
+  bottom: 10px; /* Distance from the bottom of the screen */
+  right: 10px; /* Distance from the left of the screen */
+  display: flex; /* Align buttons horizontally or vertically */
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Space between the buttons */
+}
+
+.fixed-buttons .btn {
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Adjust button font size */
+  border-radius: 5px; /* Optional: Rounded corners */
+}
+/* End Home */

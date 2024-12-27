@@ -1,0 +1,32 @@
+/* Default color for all nav links */
+.navbar-nav .nav-link {
+  color: #cfcfcf !important;
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover or active state */
+}
+
+/* Change color on hover */
+.navbar-nav .nav-link:hover {
+  color: #006f73 !important;
+}
+
+/* Change color for active/checked link */
+.navbar-nav .nav-link.active {
+  color: #006f73 !important;
+  font-weight: bold !important; /* Optional: Make active links bold */
+}
+/* Target the dropdown toggle arrow and change it to white */
+.navbar-nav .nav-link.dropdown-toggle::after {
+  color: black !important; /* Ensure the arrow color is white */
+  border-top-color: black !important; /* Change the arrow's border color */
+  border-bottom-color: transparent !important; /* Hide the bottom border */
+  margin-left: 20px;
+}
+.custom-select-no-bg {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important; /* Optional: to remove any shadow */
+}
+/* nav profile */
+.no-arrow .dropdown-toggle::after {
+  display: none !important;
+}
