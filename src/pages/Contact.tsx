@@ -48,29 +48,31 @@ const ContactUS = () => (
           </div>
 
           {/* Contact Info Section */}
-          <div className="container py-4 mx-5">
-            <Row className="justify-content-center g-4">
+          <div className="container py-4 px-3">
+            <Row className="justify-content-center ">
               {/* Phone Number */}
               <Col
                 xs={12}
+                md={6}
                 lg={4}
-                className="d-flex align-items-center gap-3 text-center text-lg-start">
+                className="d-flex align-items-center gap-3 text-center text-lg-start mb-3 mb-lg-0">
                 <i className="bi bi-telephone fs-4 textOrange"></i>
                 <div>
-                  <h6>Phone Number</h6>
-                  <p>01256784581</p>
+                  <h6 className="mb-1">Phone Number</h6>
+                  <p className="mb-0">01256784581</p>
                 </div>
               </Col>
 
               {/* Email Address */}
               <Col
                 xs={12}
+                md={6}
                 lg={4}
-                className="d-flex align-items-center gap-3 text-center text-lg-start">
+                className="d-flex align-items-center gap-3 text-center text-lg-start mb-3 mb-lg-0">
                 <i className="bi bi-envelope fs-4 textOrange"></i>
                 <div>
-                  <h6>Email Address</h6>
-                  <p>Dubaihotelservice@gmail.com</p>
+                  <h6 className="mb-1">Email Address</h6>
+                  <p className="mb-0">Dubaihotelservice@gmail.com</p>
                 </div>
               </Col>
 
@@ -78,11 +80,11 @@ const ContactUS = () => (
               <Col
                 xs={12}
                 lg={4}
-                className="d-flex  align-items-center gap-3 text-center text-lg-start">
+                className="d-flex align-items-center gap-3 text-center text-lg-start">
                 <i className="bi bi-geo-alt-fill fs-4 textOrange"></i>
                 <div>
-                  <h6>Location</h6>
-                  <p>Dubai, 1244 Street</p>
+                  <h6 className="mb-1">Location</h6>
+                  <p className="mb-0">Dubai, 1244 Street</p>
                 </div>
               </Col>
             </Row>

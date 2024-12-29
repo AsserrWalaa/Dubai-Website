@@ -2,8 +2,9 @@
 import { Card } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Clock } from "react-bootstrap-icons";
-import WhatsappButton from "../assets/whtasapp.png";
-import Call from "../assets/call.png";
+import Fixed from "../components/FixedButtons";
+
+// mui imports
 
 // styles
 import "../style/Home.css";
@@ -68,6 +69,20 @@ const offers = [
     validUntil: "Valid until December 31st",
     image: bathroom, // Duplicate for demo purposes
   },
+  {
+    title: "Room layout and furnishing",
+    description:
+      "Includes complete sterilization of all rooms with quality assurance",
+    validUntil: "Valid until December 31st",
+    image: bathroom, // Duplicate for demo purposes
+  },
+  {
+    title: "Room layout and furnishing",
+    description:
+      "Includes complete sterilization of all rooms with quality assurance",
+    validUntil: "Valid until December 31st",
+    image: bathroom, // Duplicate for demo purposes
+  },
 ];
 // end
 
@@ -86,6 +101,20 @@ const clientTestimonials = [
       "I’ve never seen our apartments this spotless. They pay attention to every detail and ensure everything is perfect.",
     rating: 5,
     image: c2,
+  },
+  {
+    name: "Jacob Jones",
+    testimonial:
+      "Reliable and efficient. They made managing my properties so much easier with their excellent cleaning services.",
+    rating: 5,
+    image: c3,
+  },
+  {
+    name: "Jacob Jones",
+    testimonial:
+      "Reliable and efficient. They made managing my properties so much easier with their excellent cleaning services.",
+    rating: 5,
+    image: c3,
   },
   {
     name: "Jacob Jones",
@@ -196,8 +225,9 @@ const Home = () => (
         that not only meet but exceed expectations, ensuring every space we work
         on is treated with the utmost professionalism
       </p>
-      <div className="container ">
-        <img src={ourWork} alt="" className="w-100" />
+      <div className="container">
+        {/* Image */}
+        <img src={ourWork} alt="Our Work" className="w-100" />
       </div>
     </section>
     {/* how it works */}
@@ -214,12 +244,30 @@ const Home = () => (
           Our exclusive offers for hotel services and furnished apartments
         </h1>
       </div>
-      <Swiper slidesPerView={1} className="my-5 swiperHome">
+      <Swiper
+        slidesPerView={3} // Default slides per view
+        loop={true} // Enable looping
+        spaceBetween={50} // Default space between slides
+        className="my-5 swiperHome"
+        breakpoints={{
+          1024: {
+            slidesPerView: 3, // Desktop: 3 slides
+            spaceBetween: 50,
+          },
+          768: {
+            slidesPerView: 2, // Tablet: 2 slides
+            spaceBetween: 30,
+          },
+          480: {
+            slidesPerView: 1, // Mobile: 1 slide
+            spaceBetween: 20,
+          },
+        }}>
         {offers.map((offer, index) => (
           <SwiperSlide key={index}>
             <Card
               className="border-0 position-relative"
-              style={{ width: "18rem" }}>
+              style={{ width: "18rem", margin: "auto" }}>
               <div
                 className="position-absolute top-0 end-0 text-white p-1 fw-bold rounded-end"
                 style={{ backgroundColor: "#F7712E" }}>
@@ -252,7 +300,21 @@ const Home = () => (
     <section className="my-5 ms-3 me-4">
       <h1 className="text-center">What Our Client Say’s</h1>
       <div>
-        <Swiper className="swiperClient gap-1 " slidesPerView={1}>
+        <Swiper
+          slidesPerView={2} // Default slides per view for wide screens
+          loop={true} // Enable looping
+          spaceBetween={50} // Default space between slides
+          className="my-5 swiperHome"
+          breakpoints={{
+            1024: {
+              slidesPerView: 2, // Wide screens: 2 slides
+              spaceBetween: 50,
+            },
+            768: {
+              slidesPerView: 1, // Small screens: 1 slide
+              spaceBetween: 20,
+            },
+          }}>
           {clientTestimonials.map((client, index) => (
             <SwiperSlide
               key={index}
@@ -284,6 +346,7 @@ const Home = () => (
             </SwiperSlide>
           ))}
         </Swiper>
+
         <div className="d-flex justify-content-center mt-5 ms-5">
           <Link to="customerReviews" className="w-25 mx-auto">
             <button className="text-dark fs-3 px-5 rounded-3 mx-auto bg-transparent borderOrange">
@@ -294,15 +357,7 @@ const Home = () => (
       </div>
     </section>
     {/* end of section */}
-    {/* fixed buttons */}
-    <div className="fixed-buttons">
-      <button className="border-0 bg-transparent z-3">
-        <img src={WhatsappButton} alt="" />
-      </button>
-      <button className="border-0 bg-transparent z-3">
-        <img src={Call} alt="" />
-      </button>
-    </div>
+    <Fixed />
     {/* footer */}
     <Footer />
   </>
