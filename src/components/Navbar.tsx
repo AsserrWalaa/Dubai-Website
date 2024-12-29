@@ -5,6 +5,7 @@ import logo from "../assets/1-removebg-preview (3) 1.jpg";
 import profile from "../assets/p2.png";
 import { NavDropdown } from "react-bootstrap";
 import "../style/navStyle.css";
+
 const AppNavbar: React.FC = () => {
   const location = useLocation();
 
@@ -18,7 +19,7 @@ const AppNavbar: React.FC = () => {
             alt="Logo"
             width="90"
             height="90"
-            className="rounded-5"
+            className="rounded-5 mx-5"
           />
         </Navbar.Brand>
 
@@ -28,7 +29,7 @@ const AppNavbar: React.FC = () => {
         {/* Navbar Collapse */}
         <Navbar.Collapse
           id="navbar-nav"
-          className="justify-content-center text-center mx-auto">
+          className="justify-content-center text-center mx-5">
           <Nav className="d-flex align-items-center mx-auto justify-content-center">
             {/* Nav Links */}
             <Nav.Link
@@ -73,10 +74,11 @@ const AppNavbar: React.FC = () => {
             </Nav.Link>
           </Nav>
 
-          {/* Dropdown */}
-          <Nav className="mx-auto">
+          {/* Dropdowns */}
+          <Nav className="ms-lg-auto">
+            {/* Language Dropdown */}
             <NavDropdown
-              className="fs-5"
+              className="fs-5 ms-lg-5"
               title={<span className="">Language</span>}
               menuVariant="dark">
               <NavDropdown.Item href="#action/3.1" className="text-light">
@@ -110,7 +112,7 @@ const AppNavbar: React.FC = () => {
 
             {/* Profile Dropdown */}
             <NavDropdown
-              className="profile-dropdown no-arrow"
+              className="profile-dropdown no-arrow ms-lg-5" // Added responsive margin on large screens
               title={
                 <img
                   src={profile}
@@ -138,9 +140,6 @@ const AppNavbar: React.FC = () => {
                   My Booking
                 </NavDropdown.Item>
               </Link>
-              {/* <NavDropdown.Item href="#logout" className="text-danger">
-                Logout
-              </NavDropdown.Item> */}
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

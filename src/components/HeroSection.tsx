@@ -17,11 +17,11 @@ const Hero = () => (
             <h2 className="pt-3" style={{ color: "#676767" }}>
               Expert Cleaning Services Tailored to Your Needs
             </h2>
-            <div className="d-flex pt-5 gap-2">
-              <button className="text-light w-75 px-5 fs-3 rounded-3 border-3 button">
+            <div className="d-lg-flex mx-lg-0 mx-auto  pt-5 gap-2">
+              <button className="text-light w-75 px-5 fs-3 my-lg-0 my-3  rounded-3 border-3 button">
                 Appointment
               </button>
-              <button className="w-75 px-5 fs-3 borderOrange rounded-3 border-3 bg-transparent ">
+              <button className="w-75 px-5 fs-3 borderOrange colorPrimary  rounded-3 border-3 bg-transparent ">
                 Call Us
               </button>
             </div>
