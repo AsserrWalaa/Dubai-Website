@@ -1,6 +1,29 @@
 /* Start Home */
 
-/* start our service section */
+/* start our service section */ /* Basic styling for the cards */
+.ourServices {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Hover effect: scaling and shadow */
+.ourServices:hover {
+  transform: scale(1.1); /* Slightly enlarge the card */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 1); /* Add shadow for depth */
+  cursor: pointer; /* Show a pointer cursor on hover */
+  z-index: 1;
+}
+
+/* Optional: Change background color on hover */
+.ourServices:hover .home-claening,
+.ourServices:hover .bathroom-claening,
+.ourServices:hover .kitchen-claening,
+.ourServices:hover .surface-claening,
+.ourServices:hover .window-claening,
+.ourServices:hover .Upholstery,
+.ourServices:hover .roomLayout,
+.ourServices:hover .perfuming {
+  background-color: rgba(0, 0, 0, 0.1); /* Slight darkening effect */
+}
+
 .home-claening {
   background-image: linear-gradient(
       to bottom,
@@ -89,6 +112,7 @@
     ),
     url(../assets/window.jpeg);
 }
+
 .ourServices {
   background-position: center;
   background-repeat: no-repeat;
@@ -98,11 +122,25 @@
 }
 /* end our service section */
 
+/* how it works */
+
+.howWorks img {
+  background: linear-gradient(
+    180deg,
+    rgba(133, 53, 0, 0.884),
+    rgb(248, 83, 0),
+    rgba(51, 51, 51, 0.966),
+    rgba(45, 148, 151, 0.897)
+  );
+}
+
 /* offers */
 
 .swiperHome .swiper-wrapper {
   display: flex;
   gap: 20px;
+}
+.swiperHome {
   overflow: hidden;
 }
 .offer-text,
